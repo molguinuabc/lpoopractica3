@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class App {
+public class AplicacionDeCartas {
 
   public void inicia() {
     Baraja b = new Baraja();
