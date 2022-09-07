@@ -14,21 +14,7 @@ public class Test {
         new Carta(11,Figura.TREBOLES)
       );
       System.out.println("--------------------");
-      Baraja b = new Baraja();
-      System.out.println(b);
-      b.barajar();
-      System.out.println(b);
-      ArrayList<Carta> mano = b.repartir(5);
-      System.out.println(mano);
-      int negras=0;
-      int rojas=0;
-      for (Carta carta : mano) {
-        if(carta.getColor() == Color.NEGRO)
-          negras++;
-        else
-          rojas++;
-      }
-      System.out.println("Negras: "+negras+" Rojas: "+ rojas);
+     
       System.out.println(new Carta("10",Figura.PICAS));
     } catch (FueraDeRangoException e) {
       System.out.println(e);
