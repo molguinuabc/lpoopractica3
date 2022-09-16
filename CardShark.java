@@ -20,7 +20,7 @@ public class CardShark {
         
     }
     private void reparteCartas(){
-        for(var j : jugadores) {
+        for(Jugador j : jugadores) {
             j.setMano(b.repartir(5));
             System.out.println("Jugador: " + j.getId()+": "+j.getMano());
         }
@@ -98,7 +98,7 @@ public class CardShark {
             }
         }
         if(empate && valorDeEmpate==cartaMasAlta) {
-            for(var j : jugadores) {
+            for(Jugador j : jugadores) {
                 if(j.getCartaLanzada().getValor() == valorDeEmpate) {
                     System.out.println("Jugador " + j.getId() + " 1 punto");
                     j.setPuntuacion(j.getPuntuacion()+1);
