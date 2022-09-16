@@ -11,7 +11,7 @@ public class Baraja {
 
   private void inicializa() {
     for (Figura f: Figura.values()) {
-      for( int v= 1 ; v <= 13 ; v++) {
+      for( int v= 2 ; v <= 14 ; v++) {
         try {
           mazo.add(new Carta(v,f));
         } catch (FueraDeRangoException e) {
